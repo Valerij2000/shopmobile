@@ -1,0 +1,31 @@
+.section-brands {
+    @include adaptiveValue("padding-top", 143, 60);
+    @include adaptiveValue("padding-bottom", 158, 70);
+}
+
+.section-brands__container {
+    h2 {
+        padding-bottom: rem(22);
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin: 10px 14px;
+    }
+    p {
+        @include adaptiveValue("padding-bottom", 69, 30);
+        line-height: 142.8%;
+    }
+}
+
+.img-people {
+    max-width: rem(54);
+}
+
+.img-1c {
+    max-width: rem(86);
+}
+
+.img-kazpost {
+    max-width: rem(375);
+}

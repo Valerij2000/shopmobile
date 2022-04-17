@@ -1,0 +1,119 @@
+.section-prices {
+    @include adaptiveValue("padding-top", 136, 60);
+    @include adaptiveValue("padding-bottom", 136, 60);
+}
+
+.section-prices__container {
+    article {
+        width: 50%;
+        @media (max-width: em(1100)) {
+            width: 100%;
+        }
+    }
+    h2 {
+        padding-bottom: rem(22);
+    }
+    p {
+        line-height: 142.8%;
+        padding-bottom: rem(48);
+        @media (max-width: em(992)) {
+            font-size: rem(16);
+        }
+    }
+}
+
+.section-card-price {
+    display: flex;
+    justify-content: center;
+    gap: 109px;
+    @include adaptiveValue("gap", 109, 30, 1250, 1100);
+    @media (max-width: em(1100)) {
+        flex-wrap: wrap;
+    }
+}
+
+.card-price {
+    display: flex;
+    justify-content: center;
+    padding: rem(53) rem(33) rem(47) rem(36);
+    width: rem(317);
+    background: #273140;
+    box-shadow: 0px 1px 26px rgba(24, 31, 41, 0.15);
+    border-radius: 15px;
+    @media (max-width: em(1100)) {
+        width: 100%;
+    }
+}
+
+.card-price__body {
+    h3 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: rem(28);
+        line-height: rem(36);
+        text-align: center;
+        color: $whiteColor;
+    }
+    li {
+        position: relative;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(16);
+        line-height: 160.3%;
+        color: #717E92;
+        padding-left: rem(14);
+        &::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: #717E92;
+            left: 0;
+            top: 10px;
+        }
+    }
+    .dis {
+        opacity: 0.2;
+    }
+}
+
+.tarif {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(12);
+    line-height: 142.8%;
+    text-align: center;
+    color: #717E92;
+    padding-bottom: rem(23);
+}
+
+.btn-card {
+    margin-top: rem(39);
+    border-radius: 5px;
+    width: rem(248);
+    height: rem(38);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: rem(23);
+    text-align: center;
+    color: $whiteColor;
+}
+
+.c-01 {
+    background: #6A7395;
+}
+
+.c-02 {
+    background: #6A9590;
+    ;
+}
+
+.c-03 {
+    background: #95936A;
+}

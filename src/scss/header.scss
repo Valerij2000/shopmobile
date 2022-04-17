@@ -93,7 +93,7 @@
     z-index: 1;
     left: 0;
     top: 0;
-    background: $mainColor;
+    background: $whiteColor;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -124,9 +124,6 @@
         top: 20px;
         right: 45px;
         font-size: 60px;
-        &:focus {
-            transform: rotate(90deg);
-        }
     }
     li {
         list-style-type: none;

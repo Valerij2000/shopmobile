@@ -1,3 +1,75 @@
-.section-main {}
+.section-main {
+    @include adaptiveValue("padding-top", 165, 60);
+}
 
-.section-main__container {}
+.section-main__container {
+    display: flex;
+    @media (max-width: em(1088)) {
+        flex-direction: column;
+    }
+    article {
+        width: 50%;
+        @media (max-width: em(1088)) {
+            width: 100%;
+            padding-top: rem(30);
+        }
+    }
+    h1 {
+        font-family: 'SF Pro Display Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: rem(62);
+        line-height: 101.3%;
+        color: $whiteColor;
+        @include adaptiveValue("padding-bottom", 38, 26);
+        @media (max-width: em(500)) {
+            font-size: rem(36);
+        }
+    }
+    p {
+        width: 70%;
+        @include adaptiveValue("font-size", 26, 18);
+        line-height: 129.8%;
+        @include adaptiveValue("padding-bottom", 67, 30);
+        @media (max-width: em(1088)) {
+            width: 100%;
+        }
+    }
+    .img-main {
+        width: 100%;
+        height: auto;
+        max-width: rem(604);
+    }
+}
+
+.btn-main {
+    background: #5CA35B;
+    border-radius: 10px;
+    width: 100%;
+    @include adaptiveValue("font-size", 24, 16);
+    line-height: 151.3%;
+    text-align: center;
+    color: $whiteColor;
+    padding: rem(10) rem(30);
+}
+
+.section-main__social {
+    @include adaptiveValue("padding-bottom", 165, 60);
+}
+
+.section-main__social__container {
+    @include adaptiveValue("padding-top", 174, 40);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(25);
+    @media (max-width: em(468)) {
+        flex-direction: column;
+        align-items: center;
+        gap: rem(20);
+    }
+    span {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

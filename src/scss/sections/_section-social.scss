@@ -1,0 +1,34 @@
+.section-social {
+    background: #181F29;
+    @include adaptiveValue("padding-top", 145, 70);
+    @include adaptiveValue("padding-bottom", 109, 70);
+}
+
+.section-social__container {
+    article {
+        width: 45%;
+        @media (max-width: em(1200)) {
+            width: 100%;
+        }
+    }
+    h2 {
+        padding-bottom: rem(22);
+    }
+    p {
+        line-height: 142.8%;
+        padding-bottom: rem(32);
+        @media (max-width: em(992)) {
+            font-size: rem(16);
+        }
+    }
+}
+
+.section__social {
+    display: flex;
+    gap: rem(38);
+    img {
+        @media (max-width: em(456)) {
+            max-width: 38px;
+        }
+    }
+}

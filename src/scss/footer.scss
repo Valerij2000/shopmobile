@@ -1,3 +1,45 @@
-//====================================================================================================
+.footer {}
 
-//====================================================================================================
+.footer__container {
+    a {
+        color: #2D3746;
+        text-align: right;
+    }
+    display: flex;
+    justify-content: space-between;
+    gap: rem(109);
+    align-items: center;
+    min-height: rem(159);
+    @media (max-width: em(824)) {
+        flex-direction: column;
+        padding: rem(50);
+        gap: rem(20);
+        a {
+            text-align: center;
+        }
+    }
+}
+
+.logo-mobile {
+    display: none;
+    @media (max-width: em(824)) {
+        display: block;
+    }
+}
+
+.footer-center {
+    a {
+        text-align: left;
+        @media (max-width: em(824)) {
+            text-align: center;
+        }
+    }
+    width: rem(240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(19);
+    img {
+        display: block;
+    }
+}
